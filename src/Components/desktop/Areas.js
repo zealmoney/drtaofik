@@ -3,8 +3,8 @@ import { Container, Grid, Header, Image, Segment } from "semantic-ui-react"
 export const AreasOfExpertise = () => {
 
     return(
-        <Segment vertical style={{paddingTop: 70, backgroundColor: '#eaf2f8'}}>
-            <Container>
+        <Segment vertical style={{padding: 50, backgroundColor: '#eaf2f8'}}>
+            
                 <Grid columns={3}>
                     <Grid.Row>
                         <Grid.Column>
@@ -22,10 +22,9 @@ export const AreasOfExpertise = () => {
                         <Grid.Column>
                             <Image src="../images/docscan.jpg" rounded />
                         </Grid.Column>
-                        <Grid.Column verticalAlign="middle">
+                        <Grid.Column textAlign="center" verticalAlign="middle">
                             <Header 
                                 as="h4"
-                                textAlign="center"
                                 content="Diabetic heart disease"
                                 style={{
                                     fontFamily: 'Arvo',
@@ -39,10 +38,9 @@ export const AreasOfExpertise = () => {
                                 pressure.
                             </p>
                         </Grid.Column>
-                        <Grid.Column verticalAlign="middle">
+                        <Grid.Column textAlign="center" verticalAlign="middle">
                         <Header 
                                 as="h4"
-                                textAlign="center"
                                 content="Atherosclerosis"
                                 style={{
                                     fontFamily: 'Arvo',
@@ -58,10 +56,9 @@ export const AreasOfExpertise = () => {
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
-                        <Grid.Column verticalAlign="middle">
+                        <Grid.Column textAlign="center" verticalAlign="middle">
                             <Header 
                                 as="h4"
-                                textAlign="center"
                                 content="Prediabetes"
                                 style={{
                                     fontFamily: 'Arvo',
@@ -75,11 +72,10 @@ export const AreasOfExpertise = () => {
                                 diabetes.
                             </p>
                         </Grid.Column>
-                        <Grid.Column verticalAlign="middle">
+                        <Grid.Column textAlign="center" verticalAlign="middle">
                             <Segment size="large" raised>
                             <Header 
                                 as="h4"
-                                textAlign="center"
                                 content="Dietary and exercise counseling"
                                 style={{
                                     fontFamily: 'Arvo',
@@ -93,7 +89,7 @@ export const AreasOfExpertise = () => {
                             </p>
                             </Segment>
                         </Grid.Column>
-                        <Grid.Column verticalAlign="middle">
+                        <Grid.Column textAlign="center" verticalAlign="middle">
                             <Image src="../images/docscan.jpg" rounded />
                         </Grid.Column>
                     </Grid.Row>
@@ -102,7 +98,6 @@ export const AreasOfExpertise = () => {
                             <Segment size="large" raised>
                             <Header 
                                 as="h4"
-                                textAlign="center"
                                 content="Coronary artery disease"
                                 style={{
                                     fontFamily: 'Arvo',
@@ -116,10 +111,9 @@ export const AreasOfExpertise = () => {
                             </p>
                             </Segment>
                         </Grid.Column>
-                        <Grid.Column verticalAlign="middle">
+                        <Grid.Column textAlign="center" verticalAlign="middle">
                             <Header 
                                 as="h4"
-                                textAlign="center"
                                 content="Heart failure"
                                 style={{
                                     fontFamily: 'Arvo',
@@ -137,7 +131,6 @@ export const AreasOfExpertise = () => {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-            </Container>
         </Segment>
     )
 }

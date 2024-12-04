@@ -3,12 +3,12 @@ import { Container, Grid, Header, Image, Segment } from "semantic-ui-react"
 export const Biography = () => {
 
     return(
-        <Segment vertical style={{paddingTop: 50}}>
+        <Segment vertical style={{paddingTop: 50, paddingBottom: 50 }}>
             <Container>
                 <Grid>
-                    <Grid.Row style={{paddingBottom: 50}}>
+                    <Grid.Row style={{padding: 80}}>
                         <Grid.Column width={7}>
-                            <Image size="large" src="../images/doctor.jpg" />
+                            <Image size="large" src="../images/doc2.jpg" />
                         </Grid.Column>
                         <Grid.Column width={9}>
                             <Grid>
@@ -35,28 +35,28 @@ export const Biography = () => {
                                                 fontWeight: 'normal'    
                                             }}
                                         />
-                                        <p
+                                        <Header 
+                                            as='h4'
+                                            content=' Dr. Taofik Yusuf, MD is one of the leading cardiac surgery 
+                                                    specialists in the USA.'
                                             style={{
-                                                fontFamily: 'Roboto',
+                                                fontFamily: 'Arvo',
                                                 fontSize: 18
                                             }}
-                                        >
-                                            Dr. Taofik Yusuf, MD is one of the leading cardiac surgery 
-                                            specialists in the USA.
-                                        </p>
-                                        <p
+                                        />
+                                        <Header 
+                                            as='h4'
+                                            content='He is a globally recognized heart surgeon and 
+                                                the director of minimally invasive cardiac surgery at UCSF. 
+                                                He received advanced training in heart and lung surgery at 
+                                                the University Hospital of Los Angeles and University Heart 
+                                                Center at Chicago.'
                                             style={{
                                                 fontFamily: 'Roboto',
-                                                fontSize: 13,
-                                                fontWeight: "normal"
+                                                fontWeight: 'normal',
+                                                fontSize: 22
                                             }}
-                                        >
-                                            He is a globally recognized heart surgeon and 
-                                            the director of minimally invasive cardiac surgery at UCSF. 
-                                            He received advanced training in heart and lung surgery at 
-                                            the University Hospital of Los Angeles and University Heart 
-                                            Center at Atlanta.
-                                        </p>
+                                        />
                                         <p>
                                             Signature
                                         </p>

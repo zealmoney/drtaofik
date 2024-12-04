@@ -1,7 +1,8 @@
 import { Segment } from "semantic-ui-react"
-import { Navbar } from "./Navbar"
 import { Biography } from "./Biography"
 import { AreasOfExpertise } from "./Areas"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 export const Home = () => {
 
@@ -10,6 +11,7 @@ export const Home = () => {
             <Navbar />
             <Biography />
             <AreasOfExpertise />
+            <Footer />
         </Segment>
     )
 }
