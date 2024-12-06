@@ -10,12 +10,9 @@ const Navbar = () => {
             >
                 <Container>
                 <Image 
-                    size="tiny" 
                     src='../images/logo.png'
+                    size="tiny"
                     inline
-                    style={{
-                        margin: 0
-                    }}
                 />
                 <Menu.Item>
                     <Header 
