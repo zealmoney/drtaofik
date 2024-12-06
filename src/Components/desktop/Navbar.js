@@ -10,7 +10,7 @@ const Navbar = () => {
             >
                 <Container>
                 <Image 
-                    size="tiny" 
+                    size="mini" 
                     src='../images/logo.png'
                     inline
                     fluid
