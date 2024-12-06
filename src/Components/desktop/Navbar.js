@@ -11,14 +11,18 @@ const Navbar = () => {
                 <Container>
                 <Image 
                     src='../images/logo.png'
-                    size="tiny"
                     inline
+                    style={{
+                        margin: 0,
+                        height: 70, 
+                        width: 70
+                    }}
                 />
                 <Menu.Item>
                     <Header 
                      style={{
                         fontFamily: "Roboto",
-                        fontSize: 25,
+                        fontSize: 20,
                         fontWeight: 'bold'
                     }}
                     as="h2"
