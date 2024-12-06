@@ -62,7 +62,7 @@ const Footer = () => {
                                         Address
                                     </Header>
                                     <Header disabled>
-                                        178 West 27th Street, Suite 527, New York NY 10012
+                                        178 West 27th Street, Suite 527, Homewood IL 60430
                                     </Header>
                                 </Grid.Column>
                             </Grid.Row>

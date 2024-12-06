@@ -1,4 +1,4 @@
-import { Segment, Menu,Header, Button, Container } from "semantic-ui-react"
+import { Segment, Menu,Header, Button, Container, Image } from "semantic-ui-react"
 import '../../../src/style.css'
 const Navbar = () => {
     return(
@@ -10,6 +10,7 @@ const Navbar = () => {
             >
                 <Container>
                 <Menu.Item>
+                    <Image size="tiny" src='../images/logo.png' />
                     <Header 
                      style={{
                         fontFamily: "Roboto",

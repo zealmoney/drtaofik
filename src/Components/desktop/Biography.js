@@ -1,6 +1,12 @@
-import { Container, Grid, Header, Image, Segment } from "semantic-ui-react"
+import { Container, Grid, Header, Image, Segment, Transition } from "semantic-ui-react"
 
 export const Biography = () => {
+
+    const transitions = [
+        'jiggle',
+        'flash',
+        'shake'
+    ]
 
     return(
         <Segment vertical style={{paddingTop: 50, paddingBottom: 50 }}>
@@ -8,7 +14,9 @@ export const Biography = () => {
                 <Grid>
                     <Grid.Row style={{padding: 80}}>
                         <Grid.Column width={7}>
+                            <Transition>                        
                             <Image size="large" src="../images/doc2.jpg" />
+                            </Transition>
                         </Grid.Column>
                         <Grid.Column width={9}>
                             <Grid>
