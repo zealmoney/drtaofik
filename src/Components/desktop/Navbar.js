@@ -9,8 +9,16 @@ const Navbar = () => {
             style={{margin: 0, padding: 0}}
             >
                 <Container>
+                <Image 
+                    size="tiny" 
+                    src='../images/logo.png'
+                    inline
+                    fluid
+                    style={{
+                        margin: 0
+                    }}
+                />
                 <Menu.Item>
-                    <Image size="tiny" src='../images/logo.png' />
                     <Header 
                      style={{
                         fontFamily: "Roboto",
