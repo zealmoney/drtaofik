@@ -10,10 +10,9 @@ const Navbar = () => {
             >
                 <Container>
                 <Image 
-                    size="mini" 
+                    size="tiny" 
                     src='../images/logo.png'
                     inline
-                    fluid
                     style={{
                         margin: 0
                     }}
