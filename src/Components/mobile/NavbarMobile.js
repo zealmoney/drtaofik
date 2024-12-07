@@ -52,7 +52,7 @@ const NavbarMobile = ({mobile}) => {
                      fixed='top'
                      size="huge"
                      secondary
-                     style={{backgroundColor: '#FFFFFF'}}           
+                     style={{backgroundColor: '#eaf2f8'}}           
                     >
                         <Container>
                             <Image
