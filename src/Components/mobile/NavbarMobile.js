@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Sidebar, Menu, Container, Image, Header, Segment, Icon, Button } from "semantic-ui-react"
 import { Link, useNavigate } from "react-router-dom"
 import { Biography } from "../desktop/Biography"
+import Footer from "../desktop/Footer"
 
 const NavbarMobile = ({mobile}) => {
 
@@ -35,6 +36,11 @@ const NavbarMobile = ({mobile}) => {
                 <Menu.Item as='a'>
                     Contact
                 </Menu.Item>
+                <Menu.Item as='a'>
+                    <Button color="facebook">
+                        Make An Appointment
+                    </Button>
+                </Menu.Item>
             </Sidebar>
             <Sidebar.Pusher dimmed={sidebarOpened}>
                 <Segment
@@ -51,18 +57,19 @@ const NavbarMobile = ({mobile}) => {
                             <Image
                                 src='../images/logo.png'
                                 inline
-                                verticalAlign="middle"
+                                size="tiny"
                                 style={{
                                     margin: 0,
-                                    height: mobile ? 50 :  70, 
-                                    width:  mobile ? 50 : 70
+                                    height: 60, 
+                                    width:  60
                                 }}
                             />
                             <Header 
                                 style={{
                                     fontFamily: "Roboto",
                                     fontSize: 20,
-                                    fontWeight: 'bold'
+                                    fontWeight: 'bold',
+                                    margin: 10
                                 }}
                                 as="h2"
                     
@@ -79,12 +86,7 @@ const NavbarMobile = ({mobile}) => {
                                 >
                                     CADIAC SURGERY EXPERT
                                 </Header.Subheader>
-                            </Header>
-                            <Menu.Item>
-                                <Button color="facebook">
-                                    Book Now
-                                </Button>
-                            </Menu.Item>    
+                            </Header>    
                             <Menu.Item  position="right" onClick={() => setSidebarOpened(true)}>
                                 <Icon size="large" name="sidebar" />
                             </Menu.Item>            
@@ -92,6 +94,7 @@ const NavbarMobile = ({mobile}) => {
                     </Menu>
                 </Segment>
                <Biography />
+               <Footer />
             </Sidebar.Pusher>
         </Sidebar.Pushable>
         </>
