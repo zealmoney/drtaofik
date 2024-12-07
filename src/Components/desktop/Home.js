@@ -10,7 +10,7 @@ export const Home = ({mobile}) => {
     if(mobile){
         return(
             <Segment vertical style={{margin: 0, padding: 0}}>
-                <NavbarMobile />
+                <NavbarMobile mobile />
             </Segment>
         )
     }else{

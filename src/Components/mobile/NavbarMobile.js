@@ -1,8 +1,9 @@
 import { useState } from "react"
-import { Sidebar, Menu, Container, Image, Header, Segment, Icon } from "semantic-ui-react"
+import { Sidebar, Menu, Container, Image, Header, Segment, Icon, Button } from "semantic-ui-react"
 import { Link, useNavigate } from "react-router-dom"
+import { Biography } from "../desktop/Biography"
 
-const NavbarMobile = () => {
+const NavbarMobile = ({mobile}) => {
 
     const [ sidebarOpened, setSidebarOpened ] = useState()
     const navigate = useNavigate()
@@ -48,35 +49,49 @@ const NavbarMobile = () => {
                     >
                         <Container>
                             <Image
-                                src="../images/logo.png" 
-                                size="tiny"
+                                src='../images/logo.png'
                                 inline
-                                fluid
+                                verticalAlign="middle"
                                 style={{
-                                    margin: 0
+                                    margin: 0,
+                                    height: mobile ? 50 :  70, 
+                                    width:  mobile ? 50 : 70
                                 }}
                             />
-                            <Header
-                                as="h2"
+                            <Header 
                                 style={{
-                                    fontFamily: "Bebas Neue",
+                                    fontFamily: "Roboto",
                                     fontSize: 20,
-                                    fontWeight: 'normal'
+                                    fontWeight: 'bold'
                                 }}
-                                color="green"
+                                as="h2"
+                    
                             >
                                 Dr Taofik Yusuf
-                                <Header.Subheader as="h6">
-                                    CADIAC EXPERT
+                                <Header.Subheader 
+                                    style={{
+                                        fontFamily: "Arvo",
+                                        fontSize: 12,
+                                        fontWeight: 'normal',
+                                    }}
+                                    as="h6"
+                    
+                                >
+                                    CADIAC SURGERY EXPERT
                                 </Header.Subheader>
-                            </Header> 
+                            </Header>
+                            <Menu.Item>
+                                <Button color="facebook">
+                                    Book Now
+                                </Button>
+                            </Menu.Item>    
                             <Menu.Item  position="right" onClick={() => setSidebarOpened(true)}>
                                 <Icon size="large" name="sidebar" />
                             </Menu.Item>            
                         </Container>
                     </Menu>
                 </Segment>
-               
+               <Biography />
             </Sidebar.Pusher>
         </Sidebar.Pushable>
         </>
