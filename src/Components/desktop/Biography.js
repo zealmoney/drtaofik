@@ -54,9 +54,8 @@ export const Biography = () => {
                                                 the University Hospital of Los Angeles and University Heart 
                                                 Center at Chicago.'
                                             style={{
-                                                fontFamily: 'Roboto',
-                                                fontWeight: 'normal',
-                                                fontSize: 22
+                                                fontSize: 18,
+                                                fontWeight: 'normal'
                                             }}
                                         />
                                         <Image src='../images/sign.png' />
