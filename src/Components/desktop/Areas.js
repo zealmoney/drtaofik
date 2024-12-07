@@ -5,7 +5,7 @@ export const AreasOfExpertise = () => {
     return(
         <Segment vertical style={{padding: 50, backgroundColor: '#eaf2f8'}}>
             
-                <Grid columns={3}>
+                <Grid stackable columns={3}>
                     <Grid.Row>
                         <Grid.Column>
                             <Header 

@@ -11,7 +11,7 @@ export const Biography = () => {
     return(
         <Segment vertical style={{paddingTop: 50, paddingBottom: 50 }}>
             <Container>
-                <Grid>
+                <Grid stackable>
                     <Grid.Row style={{padding: 80}}>
                         <Grid.Column width={7}>
                             <Transition>                        
@@ -19,7 +19,7 @@ export const Biography = () => {
                             </Transition>
                         </Grid.Column>
                         <Grid.Column width={9}>
-                            <Grid>
+                            <Grid stackable>
                                 <Grid.Row>
                                     <Grid.Column>
                                         <Header 
@@ -65,9 +65,7 @@ export const Biography = () => {
                                                 fontSize: 22
                                             }}
                                         />
-                                        <p>
-                                            Signature
-                                        </p>
+                                        <Image src='../images/sign.png' />
                                     </Grid.Column>
                                 </Grid.Row>
                             </Grid>
