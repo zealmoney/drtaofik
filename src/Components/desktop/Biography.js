@@ -2,12 +2,6 @@ import { Container, Grid, Header, Image, Segment, Transition } from "semantic-ui
 
 export const Biography = () => {
 
-    const transitions = [
-        'jiggle',
-        'flash',
-        'shake'
-    ]
-
     return(
         <Segment vertical style={{paddingTop: 50, paddingBottom: 50 }}>
             <Container>
