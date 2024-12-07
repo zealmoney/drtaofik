@@ -2,7 +2,7 @@ import { Segment, Menu,Header, Button, Container, Image } from "semantic-ui-reac
 import '../../../src/style.css'
 const Navbar = () => {
     return(
-        <Segment vertical style={{margin: 0, padding: 0}}>
+        <Segment vertical style={{margin: 0, padding: 0, backgroundColor: '#eaf2f8'}}>
             <Menu
             size="large"
             secondary  

@@ -6,7 +6,7 @@ export const Biography = () => {
         <Segment vertical style={{paddingTop: 50, paddingBottom: 50 }}>
             <Container>
                 <Grid stackable>
-                    <Grid.Row style={{padding: 80}}>
+                    <Grid.Row>
                         <Grid.Column width={7}>
                             <Transition>                        
                             <Image size="large" src="../images/doc2.jpg" />

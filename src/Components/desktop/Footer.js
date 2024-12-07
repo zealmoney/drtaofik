@@ -1,8 +1,9 @@
-import { Grid, Header, Icon, Segment } from "semantic-ui-react"
+import { Container, Grid, Header, Icon, Segment } from "semantic-ui-react"
 
 const Footer = () => {
     return(
-        <Segment vertical style={{padding: 50}}>
+        <Segment vertical style={{paddingTop: 50}}>
+            <Container>
             <Grid columns={2}>
                 <Grid.Row>
                     <Grid.Column>
@@ -94,7 +95,7 @@ const Footer = () => {
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-
+            </Container>
         </Segment>
     )
 }

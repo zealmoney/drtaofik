@@ -3,6 +3,7 @@ import { Sidebar, Menu, Container, Image, Header, Segment, Icon, Button } from "
 import { Link, useNavigate } from "react-router-dom"
 import { Biography } from "../desktop/Biography"
 import Footer from "../desktop/Footer"
+import { AreasOfExpertise } from "../desktop/Areas"
 
 const NavbarMobile = ({mobile}) => {
 
@@ -94,6 +95,7 @@ const NavbarMobile = ({mobile}) => {
                     </Menu>
                 </Segment>
                <Biography />
+               <AreasOfExpertise />
                <Footer />
             </Sidebar.Pusher>
         </Sidebar.Pushable>

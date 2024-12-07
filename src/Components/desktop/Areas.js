@@ -3,8 +3,8 @@ import { Container, Grid, Header, Image, Segment } from "semantic-ui-react"
 export const AreasOfExpertise = () => {
 
     return(
-        <Segment vertical style={{padding: 50, backgroundColor: '#eaf2f8'}}>
-            
+        <Segment vertical style={{paddingTop: 50, backgroundColor: '#eaf2f8'}}>
+            <Container>
                 <Grid stackable columns={3}>
                     <Grid.Row>
                         <Grid.Column>
@@ -131,6 +131,7 @@ export const AreasOfExpertise = () => {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
+            </Container>
         </Segment>
     )
 }
